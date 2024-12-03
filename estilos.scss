@@ -1,0 +1,30 @@
+$cor : white;
+$menu-item-color : white;
+
+body{
+    background-color: $cor;
+}
+
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0);
+
+}
+a{
+    color: $menu-item-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $menu-item-color;
+      text-decoration-thickness: 2px;
+          }
+    }
+ul{
+      list-style-type: none;
+      padding: 3px 30px;
+      display: flex;
+      flex-direction: row;
+      margin: 1px;
+    }
+  

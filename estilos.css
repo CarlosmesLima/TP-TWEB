@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 0, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 3px 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 1px;
+}/*# sourceMappingURL=estilos.css.map */
