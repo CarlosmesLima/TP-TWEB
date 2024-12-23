@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companhia Aérea</title>
     <link rel="stylesheet" href="estilos.css">
-    <title>FlyTAP - O site oficial da TAP | TAP Air Portugal</title>
 </head>
 <body>
     <header>
-		<nav id="main-menu">
-        <ul>
-            <li>
-                <a href="index.html">Viajar</a> <!-- Título do menu -->
-                <ul> <!-- Submenu -->
-                    <li><h5>Explorar</h5></li>
-                    <li><a href="#">Destinos TAP</a></li>
-                    <li><a href="#">Inspiração para a sua viagem</a></li>
-                    <li><a href="#">Pesquisa por preço</a></li>
-                    <li><a href="#">Melhores ofertas</a></li>
-                    <li><a href="#">Promoções</a></li>
-                    <li><h6>Requisitos de viagem</h6></li>
-                </ul>
-            </li>
-        </ul>
+        <nav>
+            <!-- Barra de navegação -->
+        </nav>
+    </header>
+    <main>
+        
+        <div class="opreserva">
+            <div class="item-1">
+            <img src="imagens/carro.png">
+            <p>Aluger de automoveis</p>
+          </div>
+          <div class="item-2">
+            <img src="imagens/transfer.png">
+            <p>Reservar um transfer</p>
+          </div>
+          <div class="item-3">
+            <img src="imagens/hotel.png">
+            <p>Reservar um hotel</p>
+          </div>
+          <div class="item-4">
+            <img src="imagens/seguro.png">
+            <p>Adicionar seguro</p>
+          </div>
+          <div class="item-5">
+            <img src="imagens/visitas.png">
+            <p>Visitas & Atividades</p>
+          </div>
+          <div class="item-6">
+            <p>Todas as opções de reserva</p>
+          </div>
+        </div>
 
-    
-    
-			<!--<ul><a href="about.html">Gerir reserva</a></ul>
-			<ul><a href="materials.html">Check-in</a></ul>
-			<ul><a href="contact.html">Antes da partida</a></ul>
-      <ul><a href="contact.html">TAP Miles&Go</a></ul>
-      <ul><a href="contact.html">Ajuda</a></li>
-      <ul><a href="contact.html">Login e Registo</a></ul> -->
-		</nav>
-  </header>
-
-
-  <script type="text/javascript" src="logica.js"></script>
+        <div class="bestof">
+            <h3>As melhores ofertas de voos a partir de 
+                <span class="dropdown">
+                    <select>
+                        <option value="lisboa">Lisboa</option>
+                        <option value="porto">Porto</option>
+                        <option value="faro">Faro</option>
+                    </select>
+                </span>
+            </h3>
+            
+            <div class="offers">
+                <div class="offer" id="offer1">
+                    <img src="destino1.jpg" alt="Destino 1">
+                    <p class="destination-name">Destino 1</p>
+                    <p class="details">Ida e volta</p>
+                    <p class="price">Desde 100€</p>
+                </div>
+                <div class="offer" id="offer2">
+                    <img src="destino2.jpg" alt="Destino 2">
+                    <p class="destination-name">Destino 2</p>
+                    <p class="details">Ida e volta</p>
+                    <p class="price">Desde 150€</p>
+                </div>
+                <div class="offer" id="offer3">
+                    <img src="destino3.jpg" alt="Destino 3">
+                    <p class="destination-name">Destino 3</p>
+                    <p class="details">Ida e volta</p>
+                    <p class="price">Desde 200€</p>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Conteúdo principal -->
+    </main>
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+    <script src="logica.js"></script>
 </body>
 </html>
-
-
-<!--https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp
-
--->

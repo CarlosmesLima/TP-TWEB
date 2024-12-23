@@ -1,30 +1,117 @@
-$cor : white;
-$menu-item-color : white;
 
-body{
-    background-color: $cor;
+.opreserva {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: center;
 }
 
-#main-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 0, 0);
-
+.opreserva div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 10%; /* 3 itens por linha com espaçamento */
+  border-radius: 5px;
 }
-a{
-    color: $menu-item-color;
-    text-decoration: none;
-    &:hover{
-      text-decoration: underline;
-      text-decoration-color: $menu-item-color;
-      text-decoration-thickness: 2px;
-          }
-    }
-ul{
-      list-style-type: none;
-      padding: 3px 30px;
-      display: flex;
-      flex-direction: row;
-      margin: 1px;
-    }
-  
+
+
+.opreserva div img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.opreserva .item-6 {
+  font-size: large;
+  color: rgb(5, 82, 3);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+.bestof h3 {
+  color: #000000; /* Verde escuro */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  font-size: 25px;
+}
+
+.dropdown select {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #004d00; /* Verde escuro */
+  background-color: white;
+  cursor: pointer;
+}
+
+.bestof {
+  margin-left: 375px; /* Margem grande para o bloco do conteúdo */
+}
+
+select {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.offer {
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offer:hover {
+  transform: scale(1.05);
+}
+
+.offer img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ccc;
+}
+
+.destination-name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.details {
+  font-size: 16px;
+  color: #777;
+}
+
+.price {
+  font-size: 18px;
+  color: #2e8b57;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .opreserva div {
+    width: 100%; /* 1 bloco por linha */
+  }
+  .opreserva img {
+    width: 10%;
+  }
+}
