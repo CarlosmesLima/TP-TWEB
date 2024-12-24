@@ -7,18 +7,18 @@
 }
 
 .opreserva div {
-  border: 1px solid #ccc;
-  padding: 20px;
+  border: 1px solid #e4e2e2;
+  padding: 10px;
   text-align: center;
   box-sizing: border-box;
-  width: 10%; /* 3 itens por linha com espaçamento */
+  width: 10%;
   border-radius: 5px;
 }
 
 .opreserva div img {
-  max-width: 30%;
+  max-width: 25%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .opreserva .item-6 {
@@ -39,7 +39,7 @@
 }
 
 .dropdown select {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   padding: 4px 8px;
   border: 1px solid #ccc;
@@ -50,60 +50,16 @@
 }
 
 .bestof {
-  margin-left: 375px; /* Margem grande para o bloco do conteúdo */
+  margin-left: 20%; /* Margem grande para o bloco do conteúdo */
 }
 
-select {
-  font-size: 16px;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.offers {
+.row {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
-.offer {
-  background-color: white;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.offer:hover {
-  transform: scale(1.05);
-}
-
-.offer img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-bottom: 2px solid #ccc;
-}
-
-.destination-name {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.details {
-  font-size: 16px;
-  color: #777;
-}
-
-.price {
-  font-size: 18px;
-  color: #2e8b57;
-  font-weight: bold;
-  margin-top: 10px;
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 @media (max-width: 768px) {
