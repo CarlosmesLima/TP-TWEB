@@ -42,7 +42,7 @@
   font-size: 25px;
   font-weight: bold;
   padding: 4px 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #a5a5a5;
   border-radius: 4px;
   color: #004d00; /* Verde escuro */
   background-color: white;
@@ -53,13 +53,60 @@
   margin-left: 20%; /* Margem grande para o bloco do conteúdo */
 }
 
-.row {
+.destinos {
   display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha para telas menores */
+  gap: 20px; /* Espaçamento entre as colunas */
+  justify-content: center; /* Centraliza as colunas horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno no container */
+  margin: 0 auto; /* Centraliza o container na página */
+  max-width: 1200px; /* Define uma largura máxima para o layout */
 }
 
 .column {
-  flex: 33.33%;
-  padding: 5px;
+  flex: 1 1 300px; /* Largura mínima de 300px e expansível */
+  max-width: 33%; /* Limita a largura máxima de cada coluna */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  margin: 0 10px; /* Espaçamento lateral entre as colunas */
+}
+
+.column:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.destinos img {
+  width: 100%;
+  height: 200px; /* Define altura fixa */
+  -o-object-fit: cover;
+     object-fit: cover; /* Garante que a imagem preencha sem distorção */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.column:hover img {
+  transform: scale(1.05); /* Efeito de zoom no hover */
+}
+
+.content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.content p,
+.content span {
+  margin: 5px 0;
+  font-size: 1em;
 }
 
 @media (max-width: 768px) {
