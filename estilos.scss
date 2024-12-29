@@ -6,6 +6,7 @@
   justify-content: center;
 }
 
+<<<<<<< Updated upstream
 .opreserva div {
   border: 1px solid #e4e2e2;
   padding: 10px;
@@ -121,3 +122,36 @@
     width: 10%;
   }
 }
+=======
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0,0);
+
+}
+a{
+    color: $menu-item-color;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: $menu-item-color;
+      text-decoration-thickness: 2px;
+          }
+    }
+ul{
+      list-style-type: none;
+      padding: 3px 30px;
+      display: flex;
+      flex-direction: row;
+      margin: 1px;
+    }
+ul{display:flex;}
+li {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: lightblue;
+    text-align: center;
+    color: white;
+}
+>>>>>>> Stashed changes
